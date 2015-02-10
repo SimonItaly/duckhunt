@@ -150,7 +150,7 @@ bool init()
         cerr << "Errore nel richiamo della funzione SDL_SetVideoMode()." << endl;
         return false;
     }
-    
+
     //Inizializza SDL_Mixer
     if( Mix_OpenAudio( 22050, MIX_DEFAULT_FORMAT, 2, 1024 ) == -1 )
     {

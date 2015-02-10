@@ -30,6 +30,7 @@ using namespace std;
 #include "SDL/SDL_ttf.h"
 
 #include "image_man.h"
+#include "var_init.h"
 
 //******************************************************************************
 
@@ -257,6 +258,18 @@ void halt_sounds()
 }
 
 //******************************************************************************
+
+bool fullscreen = false;
+
+void Check_FullScreen()
+{
+	if(fullscreen)
+		screen = SDL_SetVideoMode( SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, SDL_SWSURFACE );
+	else
+		screen = SDL_SetVideoMode( SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_BPP, SDL_FULLSCREEN );
+		
+	fullscreen = !(fullscreen);
+}
 
 int get_int_digits( int number )
 {

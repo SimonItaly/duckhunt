@@ -80,6 +80,9 @@ void clean_files();
 /** Ferma tutti gli eventi musicali, sia da Mix_PlayChannel che da Mix_PlayMusic. */
 void halt_sounds();
 
+/** Imposta o rimuove la modalità fullscreen */
+void Check_FullScreen();
+
 //******************************************************************************
 
 /** Restituisce il numero di cifre decimali di un numero.

@@ -177,6 +177,12 @@ int main( int argc, char* args[] )
                             break;
                         }
 
+						case SDLK_F11:
+						{
+							Check_FullScreen();
+							break;
+						}
+
                         //Handle tasto invio
                         case SDLK_KP_ENTER:
                         case SDLK_RETURN:

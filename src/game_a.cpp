@@ -201,6 +201,10 @@ int GameA_MainLoop()
 									return 0;
 		                            break;
 
+								case SDLK_F11:
+									Check_FullScreen();
+									break;
+
 								default:
 									break;
 							}
@@ -683,6 +687,10 @@ int handle_events()
 						halt_sounds();
 						return score;
                         break;
+
+					case SDLK_F11:
+						Check_FullScreen();
+						break;
 
 					default:
 						break;
