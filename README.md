@@ -16,17 +16,17 @@ GNU General Public License for more details.
 Design copyright (C) 1985-2015 Nintendo
 
 Developed in C++ by:
-	- Bisi Simone 	 [ bisi.simone (at) gmail (dot) com ]
-	- Carpino Andrea [ carpocci (at) gmail (dot) com ]
+- Bisi Simone 	 [ bisi.simone (at) gmail (dot) com ]
+- Carpino Andrea [ carpocci (at) gmail (dot) com ]
 for studying purposes ONLY, between 2014/2015.
 
 ##### Compilation
 
   1.  Install the following libraries:
-         SDL 1.2
-         SDL_image 1.2
-         SDL_ttf 1.2
-         SDL_mixer 1.2
+  - SDL 1.2
+  - SDL_image 1.2
+  - SDL_ttf 1.2
+  - SDL_mixer 1.2
   2.  Compile the project using "compile.sh"
   3.  Run "./duck_hunt"
   4.  Have fun!
