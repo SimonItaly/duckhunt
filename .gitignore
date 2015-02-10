@@ -1,1 +1,9 @@
 DuckHunt.dev
+build/DuckHunt_private.h
+build/DuckHunt_private.rc
+*.o
+*.dll
+build/DuckHunt_private.res
+DuckHunt.exe
+Makefile.win
+DuckHunt.layout
