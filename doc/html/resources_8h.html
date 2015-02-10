@@ -1,0 +1,716 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=iso-8859-1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Duck Hunt: Documentazione di Duck Hunt</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="DuckHunt.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Duck Hunt
+   </div>
+   <div id="projectbrief">Remake del popolare gioco per NES</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('resources_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file resources.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &quot;SDL/SDL.h&quot;</code><br/>
+<code>#include &quot;SDL/SDL_image.h&quot;</code><br/>
+<code>#include &quot;SDL/SDL_mixer.h&quot;</code><br/>
+<code>#include &quot;SDL/SDL_ttf.h&quot;</code><br/>
+</div>
+<p><a href="resources_8h_source.html">Vai al codice sorgente di questo file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:a061fddd7cbfd9faf08ad281b17471849"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a061fddd7cbfd9faf08ad281b17471849">load_files</a> ()</td></tr>
+<tr class="memitem:ad0cd7f9c07feb6d47da5a06ef0d02211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#ad0cd7f9c07feb6d47da5a06ef0d02211">clean_files</a> ()</td></tr>
+<tr class="memitem:ad87ec74036a0a1ec50e83011b55678ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#ad87ec74036a0a1ec50e83011b55678ba">halt_sounds</a> ()</td></tr>
+<tr class="memitem:aa402841bc669ab007287d1b4254fc27c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#aa402841bc669ab007287d1b4254fc27c">get_int_digits</a> (int number)</td></tr>
+<tr class="memitem:a841780e596351dee8a4bc968b7f3f8be"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a841780e596351dee8a4bc968b7f3f8be">convert_score</a> (int <a class="el" href="game__a_8cpp.html#aef160b7437d94056f1dc59646cd5b87d">score</a>)</td></tr>
+<tr class="memitem:a8a5a186190d5cb8db4789be9d43e74d3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a8a5a186190d5cb8db4789be9d43e74d3">convert_round</a> (int <a class="el" href="game__a_8cpp.html#a93854942a5fe3ef84917a7b56353d267">round</a>)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:a745b7e43a9a702a9aef1dd63ed039e40"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a745b7e43a9a702a9aef1dd63ed039e40">menu</a></td></tr>
+<tr class="memitem:afcec5328710ae6ac7f0a9f11cc52a148"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#afcec5328710ae6ac7f0a9f11cc52a148">arrow</a></td></tr>
+<tr class="memitem:aa5fc2a2f18bfd3359260637602be659b"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#aa5fc2a2f18bfd3359260637602be659b">duck_bg</a></td></tr>
+<tr class="memitem:a8c1ce20460b7d33bd8c7ca0c22c62b6d"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a8c1ce20460b7d33bd8c7ca0c22c62b6d">dog_sprites</a></td></tr>
+<tr class="memitem:a20654d4a990140d830ca1b89aa4e79e2"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a20654d4a990140d830ca1b89aa4e79e2">blue_duck</a></td></tr>
+<tr class="memitem:abe2990bf72bbbad261fb1441c6f82860"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#abe2990bf72bbbad261fb1441c6f82860">black_duck</a></td></tr>
+<tr class="memitem:a48a33e80119b97970df20ba8d872853b"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a48a33e80119b97970df20ba8d872853b">red_duck</a></td></tr>
+<tr class="memitem:a3847c4468ed021c129bc38757e77e9f8"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a3847c4468ed021c129bc38757e77e9f8">pass_lines</a></td></tr>
+<tr class="memitem:a1377b73ea0f85a311f9fda573c5e85c5"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a1377b73ea0f85a311f9fda573c5e85c5">bullet</a></td></tr>
+<tr class="memitem:affc661ac290af41f3390fdad752a38e5"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#affc661ac290af41f3390fdad752a38e5">perfect</a></td></tr>
+<tr class="memitem:ad3863e97097b2bcd90065d16be482afb"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#ad3863e97097b2bcd90065d16be482afb">round_box</a></td></tr>
+<tr class="memitem:a775c366df88e5b146d58ead5de0fed66"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a775c366df88e5b146d58ead5de0fed66">game_over_box</a></td></tr>
+<tr class="memitem:a4ed54025973c4c33bd1bd85086c5818d"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a4ed54025973c4c33bd1bd85086c5818d">grass_over</a></td></tr>
+<tr class="memitem:a433329258193280e0aca3f62979943da"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a433329258193280e0aca3f62979943da">fly_away_box</a></td></tr>
+<tr class="memitem:a988157591d45402f488fc0a971bb6137"><td class="memItemLeft" align="right" valign="top">Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a988157591d45402f488fc0a971bb6137">duck_intro</a></td></tr>
+<tr class="memitem:af1ee49eb39cd53705cbb53f35b5f2e38"><td class="memItemLeft" align="right" valign="top">Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#af1ee49eb39cd53705cbb53f35b5f2e38">flap</a></td></tr>
+<tr class="memitem:ab98742c22b5d63a0125f372e60c57f64"><td class="memItemLeft" align="right" valign="top">Mix_Music *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#ab98742c22b5d63a0125f372e60c57f64">menu_sound</a></td></tr>
+<tr class="memitem:abfe3251776b31452d246dee9948f2e67"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#abfe3251776b31452d246dee9948f2e67">bark</a></td></tr>
+<tr class="memitem:ae0b20dcad9cf5cb30c6f67df834a8ea7"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#ae0b20dcad9cf5cb30c6f67df834a8ea7">clear</a></td></tr>
+<tr class="memitem:a6845a03efed0d1ef60a190b8631a09fb"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a6845a03efed0d1ef60a190b8631a09fb">duck_get</a></td></tr>
+<tr class="memitem:a8c2ac82d3fef37f4ee6f64c64e689094"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a8c2ac82d3fef37f4ee6f64c64e689094">game_over_sound</a></td></tr>
+<tr class="memitem:a4fe1b386ebbd047f9bf4a790d5a9f8b8"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a4fe1b386ebbd047f9bf4a790d5a9f8b8">miss</a></td></tr>
+<tr class="memitem:a48b355f340b8366cb7c511cba7ae0193"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a48b355f340b8366cb7c511cba7ae0193">perfect_sound</a></td></tr>
+<tr class="memitem:a7af4fb7d04e0373a4b9099098d412d87"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a7af4fb7d04e0373a4b9099098d412d87">shoot</a></td></tr>
+<tr class="memitem:a5858b2c1563c815854b2fa6cb90bb16c"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#a5858b2c1563c815854b2fa6cb90bb16c">move_duck_sound</a></td></tr>
+<tr class="memitem:aca742edefceb30ef914dbf713f0ec45d"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#aca742edefceb30ef914dbf713f0ec45d">bump</a></td></tr>
+<tr class="memitem:ade0fa6a9a35372f7d50c6eb14b97f951"><td class="memItemLeft" align="right" valign="top">Mix_Chunk *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#ade0fa6a9a35372f7d50c6eb14b97f951">falling</a></td></tr>
+<tr class="memitem:abf5bfa705e66ffc1ddaa6ce46c960873"><td class="memItemLeft" align="right" valign="top">TTF_Font *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resources_8h.html#abf5bfa705e66ffc1ddaa6ce46c960873">font</a></td></tr>
+</table>
+<h2>Documentazione delle funzioni</h2>
+<a class="anchor" id="ad0cd7f9c07feb6d47da5a06ef0d02211"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void clean_files </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dealloca la memoria occupata dalle risorse del gioco. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00202">202</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a5a186190d5cb8db4789be9d43e74d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string convert_round </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>round</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Converte un intero in una stringa. </p>
+<dl class="section return"><dt>Restituisce</dt><dd>l'intero convertito sotto forma di stringa. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00265">265</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a841780e596351dee8a4bc968b7f3f8be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string convert_score </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>score</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Converte un intero in una stringa, composta da 6 cifre decimali. </p>
+<dl class="section return"><dt>Restituisce</dt><dd>l'intero convertito sotto forma di stringa. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00253">253</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa402841bc669ab007287d1b4254fc27c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_int_digits </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Restituisce il numero di cifre decimali di un numero. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>intero da valutare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>numero di cifre decimali del numero. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00246">246</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad87ec74036a0a1ec50e83011b55678ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void halt_sounds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ferma tutti gli eventi musicali, sia da Mix_PlayChannel che da Mix_PlayMusic. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00238">238</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a061fddd7cbfd9faf08ad281b17471849"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool load_files </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gestisce il caricamento delle risorse di gioco. </p>
+<dl class="section return"><dt>Restituisce</dt><dd>false in caso di errore, true altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00177">177</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentazione delle variabili</h2>
+<a class="anchor" id="afcec5328710ae6ac7f0a9f11cc52a148"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* arrow</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cursore del menù. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00037">37</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abfe3251776b31452d246dee9948f2e67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* bark</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Verso del cane. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00060">60</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abe2990bf72bbbad261fb1441c6f82860"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* black_duck</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Spritesheet della papera nera. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00040">40</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20654d4a990140d830ca1b89aa4e79e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* blue_duck</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Spritesheet della papera blu. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00042">42</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1377b73ea0f85a311f9fda573c5e85c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* bullet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Immagine del proiettile. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00044">44</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca742edefceb30ef914dbf713f0ec45d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* bump</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tonfo caduta papera. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00069">69</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0b20dcad9cf5cb30c6f67df834a8ea7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* clear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fine del round (vittoria). </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00061">61</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c1ce20460b7d33bd8c7ca0c22c62b6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* dog_sprites</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Spritesheet del cane. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00039">39</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5fc2a2f18bfd3359260637602be659b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* duck_bg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sfondo del Game A/B. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00038">38</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6845a03efed0d1ef60a190b8631a09fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* duck_get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Presa della papera. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00062">62</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a988157591d45402f488fc0a971bb6137"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Music* duck_intro</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Musica introduttiva. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00054">54</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade0fa6a9a35372f7d50c6eb14b97f951"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* falling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Suono caduta papera. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00068">68</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af1ee49eb39cd53705cbb53f35b5f2e38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Music* flap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Suono del battito d'ali. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00055">55</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a433329258193280e0aca3f62979943da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* fly_away_box</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Messaggio 'Fly Away'. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00049">49</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abf5bfa705e66ffc1ddaa6ce46c960873"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TTF_Font* font</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Font utilizzato dall'applicazione. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00073">73</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a775c366df88e5b146d58ead5de0fed66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* game_over_box</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Messaggio 'Game Over'. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00047">47</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c2ac82d3fef37f4ee6f64c64e689094"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* game_over_sound</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Game over. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00063">63</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ed54025973c4c33bd1bd85086c5818d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* grass_over</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Immagine parziale dell'erba. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00048">48</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a745b7e43a9a702a9aef1dd63ed039e40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* menu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Immagine del menù. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00036">36</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab98742c22b5d63a0125f372e60c57f64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Music* menu_sound</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Musica del menù. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00056">56</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4fe1b386ebbd047f9bf4a790d5a9f8b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* miss</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Risata del cane. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00064">64</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5858b2c1563c815854b2fa6cb90bb16c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* move_duck_sound</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Movimento simboli papere. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00067">67</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3847c4468ed021c129bc38757e77e9f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* pass_lines</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Linee che indicano il numero minimo di papere. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00043">43</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="affc661ac290af41f3390fdad752a38e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* perfect</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Messaggio 'Perfect'. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00045">45</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48b355f340b8366cb7c511cba7ae0193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* perfect_sound</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Suono che accompagna il messaggio 'Perfect'. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00065">65</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48a33e80119b97970df20ba8d872853b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* red_duck</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Spritesheet della papera rossa. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00041">41</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3863e97097b2bcd90065d16be482afb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* round_box</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Messaggio 'Round'. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00046">46</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7af4fb7d04e0373a4b9099098d412d87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Mix_Chunk* shoot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Suono dello sparo. </p>
+
+<p>Definizione alla linea <a class="el" href="resources_8cpp_source.html#l00066">66</a> del file <a class="el" href="resources_8cpp_source.html">resources.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="resources_8h.html">resources.h</a></li>
+    <li class="footer">Generato Mer 4 Feb 2015 16:43:45 per Duck Hunt da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

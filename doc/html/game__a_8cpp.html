@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=iso-8859-1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Duck Hunt: Documentazione di Duck Hunt</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="DuckHunt.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Duck Hunt
+   </div>
+   <div id="projectbrief">Remake del popolare gioco per NES</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('game__a_8cpp.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file game_a.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &quot;SDL/SDL.h&quot;</code><br/>
+<code>#include &quot;SDL/SDL_image.h&quot;</code><br/>
+<code>#include &quot;SDL/SDL_mixer.h&quot;</code><br/>
+<code>#include &quot;SDL/SDL_ttf.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="timer_8h_source.html">timer.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="image__man_8h_source.html">image_man.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="game__a_8h_source.html">game_a.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="var__init_8h_source.html">var_init.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="resources_8h_source.html">resources.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dog_8h_source.html">dog.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="duck_8h_source.html">duck.h</a>&quot;</code><br/>
+</div>
+<p><a href="game__a_8cpp_source.html">Vai al codice sorgente di questo file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:aef5626c396e500bc17b375e7f7c648e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#aef5626c396e500bc17b375e7f7c648e2">RETURN_ESC_EVENT</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memitem:a9e8bc73d2968db026b946887eb8f499d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a9e8bc73d2968db026b946887eb8f499d">RETURN_NO_EVENT</a>&#160;&#160;&#160;-2</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:a454ef9e2f161dcb1336ac0c4c398eafa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a454ef9e2f161dcb1336ac0c4c398eafa">apply_round</a> (int <a class="el" href="game__a_8cpp.html#a93854942a5fe3ef84917a7b56353d267">round</a>)</td></tr>
+<tr class="memitem:adadbc4c55cc490e00caaa1884528cb46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#adadbc4c55cc490e00caaa1884528cb46">apply_game_over</a> ()</td></tr>
+<tr class="memitem:a498cf78289b0a3b3e6c7c5eb3c1634a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a498cf78289b0a3b3e6c7c5eb3c1634a4">screen_update</a> ()</td></tr>
+<tr class="memitem:a86cee01a84babc41068444bd207eb1f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a86cee01a84babc41068444bd207eb1f8">halt_events</a> ()</td></tr>
+<tr class="memitem:a44c0bd1d6e54360b035c9b298faff432"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a44c0bd1d6e54360b035c9b298faff432">handle_events</a> ()</td></tr>
+<tr class="memitem:aa4fcdcb0f63c4703831ad2aa27b050c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#aa4fcdcb0f63c4703831ad2aa27b050c9">show_duck_miss</a> (bool game_over)</td></tr>
+<tr class="memitem:ab0e0a867501ff7ebc03c03bcd378d197"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#ab0e0a867501ff7ebc03c03bcd378d197">GameA_MainLoop</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:a669acd4370d1be8ab9acc0f43ba4fb6f"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a669acd4370d1be8ab9acc0f43ba4fb6f">score_text</a> = NULL</td></tr>
+<tr class="memitem:a46f40697b9a1b3767747ef3ba38b0ea8"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a46f40697b9a1b3767747ef3ba38b0ea8">round_text</a> = NULL</td></tr>
+<tr class="memitem:adc478d1300f2a5318b6830fa74b6c16e"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#adc478d1300f2a5318b6830fa74b6c16e">round_upper_text</a> = NULL</td></tr>
+<tr class="memitem:a1109c273aea0626d7086926144189e72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a1109c273aea0626d7086926144189e72">bullets_amount</a> = 3</td></tr>
+<tr class="memitem:a93854942a5fe3ef84917a7b56353d267"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a93854942a5fe3ef84917a7b56353d267">round</a> = 1</td></tr>
+<tr class="memitem:aef160b7437d94056f1dc59646cd5b87d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#aef160b7437d94056f1dc59646cd5b87d">score</a> = 0</td></tr>
+<tr class="memitem:a45e3e052c27b20b833f0c3e786875c3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a45e3e052c27b20b833f0c3e786875c3f">event_ret</a></td></tr>
+<tr class="memitem:abddd842d85558f9fd988c2320bb13a35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#abddd842d85558f9fd988c2320bb13a35">cur_duck</a> = -1</td></tr>
+<tr class="memitem:aca33c4a1f90703f5a031f144fa50cf4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#aca33c4a1f90703f5a031f144fa50cf4a">hit_ducks</a></td></tr>
+<tr class="memitem:a74f9bdc8f623c2bc200076855a295ecb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a74f9bdc8f623c2bc200076855a295ecb">pass_ducks</a> = 6</td></tr>
+<tr class="memitem:aeef46b68f420e18f98353d5b1751cb3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#aeef46b68f420e18f98353d5b1751cb3a">hit_duck</a> [11]</td></tr>
+<tr class="memitem:a7331774626f6519e784590d45bbc1406"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a7331774626f6519e784590d45bbc1406">black_frame</a> = false</td></tr>
+<tr class="memitem:aebb2d9078bfb8e065d8ab6627a832def"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#aebb2d9078bfb8e065d8ab6627a832def">duck_caught</a> = false</td></tr>
+<tr class="memitem:a0332445763833fdeff4ea6a394cc50e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a0332445763833fdeff4ea6a394cc50e0">fly_away</a> = false</td></tr>
+<tr class="memitem:a47dd925db04772dfee8bab23145f5698"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtimer.html">timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a47dd925db04772dfee8bab23145f5698">fps</a></td></tr>
+<tr class="memitem:a7304d3edbf71be14b8498ca49cda3095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtimer.html">timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#a7304d3edbf71be14b8498ca49cda3095">round_timer</a></td></tr>
+<tr class="memitem:ab43ec62768347afb9fb36cda84380ac9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtimer.html">timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game__a_8cpp.html#ab43ec62768347afb9fb36cda84380ac9">duck_blink</a></td></tr>
+</table>
+<h2>Documentazione delle definizioni</h2>
+<a class="anchor" id="aef5626c396e500bc17b375e7f7c648e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RETURN_ESC_EVENT&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Valore di ritorno usato da <a class="el" href="game__a_8cpp.html#a44c0bd1d6e54360b035c9b298faff432">handle_events()</a> per la pressione di ESC. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00047">47</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e8bc73d2968db026b946887eb8f499d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RETURN_NO_EVENT&#160;&#160;&#160;-2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Valore di ritorno usato da <a class="el" href="game__a_8cpp.html#a44c0bd1d6e54360b035c9b298faff432">handle_events()</a> se non avvengono evento. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00049">49</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentazione delle funzioni</h2>
+<a class="anchor" id="adadbc4c55cc490e00caaa1884528cb46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply_game_over </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Applica il messaggio 'Game Over'. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00555">555</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a454ef9e2f161dcb1336ac0c4c398eafa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply_round </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>round</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Applica il numero del round. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">round</td><td>numero del round. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00547">547</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0e0a867501ff7ebc03c03bcd378d197"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameA_MainLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gestisce il gioco A con una papera. </p>
+<dl class="section return"><dt>Restituisce</dt><dd>punteggio della partita o -1 se si esce dall'applicazione. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00108">108</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a86cee01a84babc41068444bd207eb1f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void halt_events </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scarta tutti gli eventi in input. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00662">662</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44c0bd1d6e54360b035c9b298faff432"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int handle_events </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gestisce gli eventi per l'uscita dal programma durante le animazioni. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00667">667</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a498cf78289b0a3b3e6c7c5eb3c1634a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void screen_update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Aggiorna lo schermo corrente, prima di utilizzare SDL_Flip per mandare le immagini a schermo </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00560">560</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4fcdcb0f63c4703831ad2aa27b050c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int show_duck_miss </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>game_over</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Visualizza l'animazione del cane dopo la fuga di una papera. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game_over</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>l'evento gestito da <a class="el" href="game__a_8cpp.html#a44c0bd1d6e54360b035c9b298faff432">handle_events()</a> </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00498">498</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentazione delle variabili</h2>
+<a class="anchor" id="a7331774626f6519e784590d45bbc1406"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool black_frame = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Controlla se mostrare il frame nero dopo uno sparo. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00097">97</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1109c273aea0626d7086926144189e72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bullets_amount = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Proiettili rimasti. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00083">83</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abddd842d85558f9fd988c2320bb13a35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cur_duck = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Papera corrente. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00089">89</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab43ec62768347afb9fb36cda84380ac9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtimer.html">timer</a> duck_blink</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Timer che gestisce il flash delle papere durante il gioco. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00102">102</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aebb2d9078bfb8e065d8ab6627a832def"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool duck_caught = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Controlla se la papera è stata colpita. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00098">98</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45e3e052c27b20b833f0c3e786875c3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int event_ret</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Intero per la gestione degli eventi tramite <a class="el" href="game__a_8cpp.html#a44c0bd1d6e54360b035c9b298faff432">handle_events()</a>. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00085">85</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0332445763833fdeff4ea6a394cc50e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fly_away = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Controlla se la papera è volata via. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00099">99</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47dd925db04772dfee8bab23145f5698"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtimer.html">timer</a> fps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Timer dei frame per second (FPS). </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00102">102</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeef46b68f420e18f98353d5b1751cb3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hit_duck[11]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Array di papere colpite. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00094">94</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca33c4a1f90703f5a031f144fa50cf4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hit_ducks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Papere colpite. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00089">89</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74f9bdc8f623c2bc200076855a295ecb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pass_ducks = 6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Papere necessarie per passare il round. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00091">91</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93854942a5fe3ef84917a7b56353d267"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int round = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Round attuale. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00084">84</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46f40697b9a1b3767747ef3ba38b0ea8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface * round_text = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Superficie contentente il round attuale. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00079">79</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7304d3edbf71be14b8498ca49cda3095"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtimer.html">timer</a> round_timer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Timer della scritta 'Round'. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00102">102</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc478d1300f2a5318b6830fa74b6c16e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface * round_upper_text = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Superficie contentente il round da applicare con <a class="el" href="game__a_8cpp.html#a454ef9e2f161dcb1336ac0c4c398eafa">apply_round()</a>. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00080">80</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef160b7437d94056f1dc59646cd5b87d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Punteggio attuale. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00085">85</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a669acd4370d1be8ab9acc0f43ba4fb6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface* score_text = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Superficie contente il punteggio attuale. </p>
+
+<p>Definizione alla linea <a class="el" href="game__a_8cpp_source.html#l00078">78</a> del file <a class="el" href="game__a_8cpp_source.html">game_a.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="game__a_8cpp.html">game_a.cpp</a></li>
+    <li class="footer">Generato Mer 4 Feb 2015 16:43:45 per Duck Hunt da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

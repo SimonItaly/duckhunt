@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=iso-8859-1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Duck Hunt: Documentazione di Duck Hunt</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="DuckHunt.ico"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Duck Hunt
+   </div>
+   <div id="projectbrief">Remake del popolare gioco per NES</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dog_8cpp.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Composti</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file dog.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &quot;SDL/SDL.h&quot;</code><br/>
+<code>#include &quot;SDL/SDL_image.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="image__man_8h_source.html">image_man.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="timer_8h_source.html">timer.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="var__init_8h_source.html">var_init.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="resources_8h_source.html">resources.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dog_8h_source.html">dog.h</a>&quot;</code><br/>
+</div>
+<p><a href="dog_8cpp_source.html">Vai al codice sorgente di questo file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Composti</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdog.html">dog</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:a859aa0d141056449932d9e7ac50bd59d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a859aa0d141056449932d9e7ac50bd59d">step_frame</a> ()</td></tr>
+<tr class="memitem:a62cfdea61c640ecf2484271aa29dc03a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a62cfdea61c640ecf2484271aa29dc03a">dog_set_clips</a> ()</td></tr>
+<tr class="memitem:ad5889b23c67d102d04d00c0df1476952"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#ad5889b23c67d102d04d00c0df1476952">dog_init</a> ()</td></tr>
+<tr class="memitem:a6dc70e810a06ee5dbda82df385a870b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a6dc70e810a06ee5dbda82df385a870b0">dog_move</a> ()</td></tr>
+<tr class="memitem:a9de593ce126c9be4b1d0f79b755fd54e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a9de593ce126c9be4b1d0f79b755fd54e">dog_show</a> ()</td></tr>
+<tr class="memitem:af4326876e6ef76974e5e9eff35ea3ddc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#af4326876e6ef76974e5e9eff35ea3ddc">dog_intro_animation</a> ()</td></tr>
+<tr class="memitem:a5d7cceb3276430166120a87fc42d9439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a5d7cceb3276430166120a87fc42d9439">dog_catch_init</a> ()</td></tr>
+<tr class="memitem:aaf6bb9b5c193555ab4b825293de82847"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#aaf6bb9b5c193555ab4b825293de82847">dog_catch_anim</a> (int x)</td></tr>
+<tr class="memitem:a1be80777a76078a9323fe57cb0b304c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a1be80777a76078a9323fe57cb0b304c9">dog_lol_init</a> ()</td></tr>
+<tr class="memitem:a0ae407b5e6ab43e74c9d9e164c022fce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a0ae407b5e6ab43e74c9d9e164c022fce">dog_show_lol</a> (bool back)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:a83cdcd5a52971c9f9048cdc03dac4d7c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a83cdcd5a52971c9f9048cdc03dac4d7c">dog_w</a> = 112</td></tr>
+<tr class="memitem:a4a88e40a2401ccced9b5a521dbbf8256"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a4a88e40a2401ccced9b5a521dbbf8256">dog_h</a> = 105</td></tr>
+<tr class="memitem:a37a2ad4603c9402ffe830fe7dedd68e5"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#a37a2ad4603c9402ffe830fe7dedd68e5">frames</a> [11]</td></tr>
+<tr class="memitem:ab605efb26123e9ba6f7997f8955db946"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structdog.html">dog</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dog_8cpp.html#ab605efb26123e9ba6f7997f8955db946">d</a></td></tr>
+</table>
+<h2>Documentazione delle funzioni</h2>
+<a class="anchor" id="aaf6bb9b5c193555ab4b825293de82847"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dog_catch_anim </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gestisce l'animazione della papera colpita. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>posizione orizzontale nella quale far apparire il cane. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>false se l'animazione è terminata, false altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00256">256</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d7cceb3276430166120a87fc42d9439"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dog_catch_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inizializza le variabili dell'animazione della papera colpita. </p>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00250">250</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5889b23c67d102d04d00c0df1476952"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dog_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inizializza le variabili dell'animazione introduttiva. </p>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00168">168</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4326876e6ef76974e5e9eff35ea3ddc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dog_intro_animation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gestisce l'animazione introduttiva </p>
+<dl class="section return"><dt>Restituisce</dt><dd>false in caso di errore </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00203">203</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1be80777a76078a9323fe57cb0b304c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dog_lol_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inizializza le variabili dell'animazione della papera persa. </p>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00280">280</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6dc70e810a06ee5dbda82df385a870b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dog_move </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Muove il cane nella posizione successiva. </p>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00182">182</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62cfdea61c640ecf2484271aa29dc03a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dog_set_clips </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Definisce i bordi degli sprite del cane. </p>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00097">97</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9de593ce126c9be4b1d0f79b755fd54e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dog_show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mostra lo sprite attuale del cane </p>
+<dl class="section return"><dt>Restituisce</dt><dd>true se l'animazione è terminata, false altrimenti. </dd></dl>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00194">194</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ae407b5e6ab43e74c9d9e164c022fce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dog_show_lol </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>back</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gestisce l'animazione della papera persa. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">back</td><td>indica se il cane deve tornare sotto la linea dell'erba. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00286">286</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a859aa0d141056449932d9e7ac50bd59d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void step_frame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Avanza al frame successivo. </p>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00060">60</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentazione delle variabili</h2>
+<a class="anchor" id="ab605efb26123e9ba6f7997f8955db946"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structdog.html">dog</a>  d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a88e40a2401ccced9b5a521dbbf8256"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int dog_h = 105</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Altezza dello spritesheet del cane. </p>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00040">40</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83cdcd5a52971c9f9048cdc03dac4d7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int dog_w = 112</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Larghezza dello spritesheet del cane. </p>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00039">39</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37a2ad4603c9402ffe830fe7dedd68e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Rect frames[11]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Vettore delle aree di ritaglio degli sprites del cane. </p>
+
+<p>Definizione alla linea <a class="el" href="dog_8cpp_source.html#l00043">43</a> del file <a class="el" href="dog_8cpp_source.html">dog.cpp</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dog_8cpp.html">dog.cpp</a></li>
+    <li class="footer">Generato Mer 4 Feb 2015 16:43:45 per Duck Hunt da
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>
