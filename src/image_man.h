@@ -18,12 +18,6 @@
 	for studying purposes ONLY, between 2014/2015.
 */
 
-/** Carica, ottimizza e applica il color key ad un'immagine.
- * \param filename path del file immagine.
- * \return il puntatore alla SDL_Surface contente l'immagine, NULL in caso di errore.
- */
-SDL_Surface *load_image( std::string filename );
-
 /** Riempie un'area rettangolare con un dato colore.
  * \param dst SDL_Surface sul quale applicare il colore.
  * \param x origine orizzontale dell'area da colorare.
