@@ -29,34 +29,6 @@ using namespace std;
 
 //******************************************************************************
 
-SDL_Surface *load_image( string filename )
-{
-    //Immagine iniziale
-    SDL_Surface* loadedImage = NULL;
-
-    //Immagine finale
-    SDL_Surface* optimizedImage = NULL;
-
-    //Caricamento dell'immagine
-    loadedImage = IMG_Load( filename.c_str() );
-    if( loadedImage != NULL )
-    {
-        //Crea l'immagine finale
-        optimizedImage = SDL_DisplayFormat( loadedImage );
-        if( optimizedImage != NULL )
-        {
-            //Applica la color key
-            SDL_SetColorKey( optimizedImage, SDL_SRCCOLORKEY, SDL_MapRGB( optimizedImage->format, 0, 0xFF, 0xFF ) );
-        }
-
-        //Rimuovi l'immagine iniziale.
-        SDL_FreeSurface( loadedImage );
-    }
-
-    //Ritorna l'immagine finale
-    return optimizedImage;
-}
-
 int SDL_FillRect(SDL_Surface* dst, const int x, const int y, const int h, const int w, Uint32 color)
 {
 	//Converte gli offset da interi a SDL_Rect
