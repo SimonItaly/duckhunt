@@ -3,23 +3,25 @@ A NES (PAL) Duck Hunt clone (game A only), written in C++ with SDL 1.2 between 2
 
 ##### License
 
-Duck Hunt is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-any later version.
-
-Duck Hunt is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-Design copyright (C) 1985-2015 Nintendo
+Duck Hunt is free software: you can redistribute it and/or modify<br />
+it under the terms of the GNU General Public License as published by<br />
+the Free Software Foundation, either version 3 of the License, or<br />
+any later version.<br />
+<br />
+Duck Hunt is distributed in the hope that it will be useful,<br />
+but WITHOUT ANY WARRANTY; without even the implied warranty of<br />
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<br />
+GNU General Public License for more details.<br />
+<br />
+Design copyright (C) 1985-2015 Nintendo<br />
 
 ##### Authors
 
 Developed in C++ by:
+<br />
 - Bisi Simone 	 [ bisi.simone (at) gmail (dot) com ]
 - Carpino Andrea [ carpocci (at) gmail (dot) com ]
+<br />
 for studying purposes ONLY, between 2014/2015.
 
 ##### Compilation
