@@ -22,6 +22,7 @@ Developed in C++ by:
 - Bisi Simone 	 [ bisi.simone (at) gmail (dot) com ]
 - Carpino Andrea [ carpocci (at) gmail (dot) com ]
 <br />
+
 for studying purposes ONLY, between 2014/2015.
 
 ##### Compilation
