@@ -10,8 +10,8 @@ any later version.<br />
 <br />
 Duck Hunt is distributed in the hope that it will be useful,<br />
 but WITHOUT ANY WARRANTY; without even the implied warranty of<br />
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<br />
-GNU General Public License for more details.<br />
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.<br />
+See the GNU General Public License for more details.<br />
 <br />
 Design copyright (C) 1985-2015 Nintendo<br />
 
