@@ -15,6 +15,8 @@ GNU General Public License for more details.
 
 Design copyright (C) 1985-2015 Nintendo
 
+##### Authors
+
 Developed in C++ by:
 - Bisi Simone 	 [ bisi.simone (at) gmail (dot) com ]
 - Carpino Andrea [ carpocci (at) gmail (dot) com ]
@@ -30,3 +32,7 @@ for studying purposes ONLY, between 2014/2015.
   2.  Compile the project using "compile.sh"
   3.  Run "./duck_hunt"
   4.  Have fun!
+
+##### Notes
+
+- Documentation is in Italian language
